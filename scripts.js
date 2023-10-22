@@ -6,7 +6,7 @@ let originalPrices = []; // Array untuk menyimpan OriginalPrice dari setiap hote
 
 // Function to fetch XML data
 function fetchXMLData() {
-    fetch('http://127.0.0.1:5500/Response.xml')
+    fetch('https://frontedproject.vercel.app/Response.xml')
     .then(response => { return response.text(); })
     .then(data => {
         const parser = new DOMParser().parseFromString(data, "text/xml");
